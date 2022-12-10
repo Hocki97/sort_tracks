@@ -40,7 +40,7 @@ class tracks
             $file_name_old = PATH.$track->track_file_name_get ();
             $file_name_new = $path.'\\'.$track->track_bpm_get ().'\\'.$track->track_file_name_get ();
 
-            copy ($file_name_old, $file_name_new); //FIXME: use rename or copy?
+            link ($file_name_old, $file_name_new);
         }
     }
 
@@ -56,7 +56,7 @@ class tracks
             $file_name_old = PATH.$track->track_file_name_get ();
             $file_name_new = $path.'\\'.$track->track_genre_get ().'\\'.$track->track_file_name_get ();
 
-            copy ($file_name_old, $file_name_new); //FIXME: use rename or copy?
+            link ($file_name_old, $file_name_new);
         }
     }
 
@@ -72,7 +72,7 @@ class tracks
             $file_name_old = PATH.$track->track_file_name_get ();
             $file_name_new = $path.'\\'.$track->track_key_get ().'\\'.$track->track_file_name_get ();
 
-            copy ($file_name_old, $file_name_new); //FIXME: use rename or copy?
+            link ($file_name_old, $file_name_new);
         }
     }
 }
@@ -235,7 +235,7 @@ function dir_list_all_tracks ($dir)
 
 
 //define path
-define ('PATH', 'C:\Users\tobias.hockertz\Music\\');
+define ('PATH', 'C:\Users\tobia\Music\Test\\');
 
 //load all tracks of one folder
 $tracks = new tracks;
