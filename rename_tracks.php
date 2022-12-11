@@ -2,7 +2,7 @@
 require_once (__DIR__.'/libraries/dir.inc.php');
 require_once (__DIR__.'/libraries/audd.inc.php');
 
-//define dir and api token
+//define dir and api token -->with free trail max 300 requests
 define ('PATH', 'C:\Users\tobia\Music\B2B\V1\\');
 define ('AUDD_API_TOKEN', 'xx'); 
 
