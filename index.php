@@ -174,8 +174,6 @@ foreach ($tracks->tracks_get () as $track)
                                    $track_information['genre']);
 }
 
-print_r ($tracks);
-
 //build folder structure
 if (!is_dir (PATH.'Sortierte Tracks'))
     mkdir (PATH.'Sortierte Tracks');
